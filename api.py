@@ -37,7 +37,7 @@ def read_item(
             "Known_contact": [Known_contact],
         }
     )
-    dbfile = open("Covid_Classifier.pickle", "rb")
+    dbfile = open("covid_classifier.pickle", "rb")
     model = pk.load(dbfile)
     result = model.predict(df)
     if result:
